@@ -1,6 +1,6 @@
 ; Assembler Final Project
 ; Digital Juke Box
-; Jay Phillips & Salim Dhahri
+; Jay Phillips
 
 ; Layout of this file:
 ;     1. Interrupt Vector
@@ -77,6 +77,7 @@
 
 .cseg
 ; There are 49 possible frequencies spanning 4 octaves
+; These frequencies serve as a lookup table
 FLASH_frequencies:
 	.DB 0x43, 0x09 ; Bb1 --  0
 	.DB 0x3F, 0x45 ; B1  --  1
@@ -131,7 +132,6 @@ FLASH_frequencies:
 	.DB 0x04, 0x70 ; A5  -- 47
 
 	.DB 0x04, 0x31 ; Bb5 -- 48
-
 
 
 ; Chromatic Scale to test every possible pitch
@@ -273,7 +273,7 @@ main:
 	play_loop:
 		CALL play_note
 		CALL prepare_note
-		ADIW Z, 0x04
+		ADIW Z, 0x04 ; Move pointer to select the next note
 
 	wait:
 		NOP
@@ -423,8 +423,6 @@ load_SRAM_frequencies:
 	RET
 
 
-
-
 ; Unused
 configure_song_array:
 	PUSH r16
@@ -450,6 +448,7 @@ configure_song_array:
 	POP r17
 	POP r16
 	RET
+
 
 ; INPUT: Number of sentiseconds to wait (r18:r19)
 ; OUTPUT: Void Subroutine
@@ -584,7 +583,7 @@ bubble_sort:
 			CP r18, r16
 			BRMI swap
 			BREQ check_LSB
-			RJMP check_inner ; Should only occur 
+			RJMP check_inner ; Should only occur if MSbypes are equal
 
 			check_LSB:
 				CP r19, r17

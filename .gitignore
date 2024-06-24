@@ -14,3 +14,4 @@ bin/*
 *.txt
 *.pro
 *.stackdump
+*.ini
