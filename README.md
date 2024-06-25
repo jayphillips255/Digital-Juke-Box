@@ -16,15 +16,20 @@ Did we meet all these goals? No. Here are my reasons why:
 - My partner for this project simply did not pull their weight. More on this in the next section.
 - In my view, this project was still a success because we still developed meaningful functionality and learned a lot in the process
 
-## This was a Group Project...
+## This was a Group Project
 Another student and I were respondible for working on this project together. Truthfully, I recieved almost no help from this student. From what I could tell, they did not understand the content of the class at a high enough level to contribute. I would try my best to explain concepts in an effort to bring them up to speed, but frankly this did not work. There became a point where the project's deadline promped me to get the job done by meself. What upsetted me the most was missing out on pair programming experience. Yet, my programming skills still improved significantly after this project. WIth all that said, my attitude towards them is actually positive. They were (and still are) a kind and respectfull person, and I wish them the best in their future endeavors.
 
 ## At a Glance
 This project uses Gerd's AVR Assembler. You can find it here: https://sourceforge.net/projects/gerdsavrassembl/
 The assembler translates one or more .asm files into a single .hex file. This .hex file is then sent to the metro board. Upon reaching the metro board, assembly instructions are loaded into program memory of the board's microprosessor. The program begins execution immediately.
 
+Throughout this project I have ulitized 2 datasheets:<br>
+AVR Instruction Set Manuel: https://ww1.microchip.com/downloads/en/DeviceDoc/AVR-Instruction-Set-Manual-DS40002198A.pdf<br>
+ATmega328P Data Sheet: https://ww1.microchip.com/downloads/en/DeviceDoc/Atmel-7810-Automotive-Microcontrollers-ATmega328P_Datasheet.pdf
+
 ## Our Software
-Watch a demo here: https://youtu.be/xWGmJE0x4ws
+You cannot run this project yourself unless you have the appropriate external hardware.<br>
+For this reason I've provided a video demo: https://youtu.be/xWGmJE0x4ws
 
 Our software at a high level:
 - Upon execution, the user will hear 49 consecutive ascending notes. This was developed to ensure our software could successfully produce its full range of frequencies.
