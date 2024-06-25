@@ -53,5 +53,5 @@ Valuable skills and knowledge I got from this project:
 ## Circuit Diagram
 <img src="Documentation/CircuitDiagram.png" alt="Circuit Diagram" width="650" height="375">
 
-## Metro Board
+## BreadBoard
 <img src="Documentation/Metro&Breadboard.png" alt="Metro Board" width="650" height="375">
