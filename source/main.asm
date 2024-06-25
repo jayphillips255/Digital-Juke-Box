@@ -19,8 +19,8 @@
 ; ***********************************
 
 ; Page 49
-; RETI, RJMP, NOP	: 1 byte
-; JMP				: 2 bytes
+; RETI, RJMP, NOP   : 1 byte
+; JMP               : 2 bytes
 
 	RJMP main ; RESET
 	NOP
