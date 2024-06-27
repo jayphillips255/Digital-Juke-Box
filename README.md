@@ -21,9 +21,9 @@ Another student and I were respondible for working on this project together. Tru
 
 ## At a Glance
 This project uses Gerd's AVR Assembler. You can find it here: https://sourceforge.net/projects/gerdsavrassembl/
-The assembler translates one or more .asm files into a single .hex file. This .hex file is then sent to the metro board. Upon reaching the metro board, assembly instructions are loaded into program memory of the board's microprosessor. The program begins execution immediately.
+The assembler translates one or more .asm files into a single .hex file. This .hex file is then sent to a metro board. Upon reaching the metro board, assembly instructions are loaded into program memory of the board's microprosessor. The program begins execution immediately.
 
-Throughout this project I have ulitized 2 datasheets:<br>
+Throughout this project we ulitized 2 datasheets:<br>
 AVR Instruction Set Manuel: https://ww1.microchip.com/downloads/en/DeviceDoc/AVR-Instruction-Set-Manual-DS40002198A.pdf<br>
 ATmega328P Data Sheet: https://ww1.microchip.com/downloads/en/DeviceDoc/Atmel-7810-Automotive-Microcontrollers-ATmega328P_Datasheet.pdf
 

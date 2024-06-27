@@ -814,4 +814,3 @@ stall:
 
 	POP r16
 	RET
-
